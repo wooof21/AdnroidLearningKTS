@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<selector>: The root element for a StateListAnimator.-->
+<!--<item>: Defines an animation set for a specific state.-->
+<!--android:state_activated="true": This item applies when the View's state_activated is true.
+Will use isActivated to indicate whether the drawer is open or closed.-->
+<!-- <objectAnimator>: Defines a property animation [2].-->
+<!-- android:propertyName="rotation": The property of the View to animate (in this case, rotation).-->
+<!-- android:valueFrom and android:valueTo: The starting and ending values of the property.
+Animating a rotation from 0 degrees (hamburger) to 180 degrees (arrow) and vice versa.-->
+<!--android:duration: The duration of the animation in milliseconds.-->
+<!-- <item> (default state): This item applies when none of the other states match.
+This will be the state when the drawer is closed. The rotation animation goes from 180 degrees back to 0. 2.
+Assign the StateListAnimator to the ImageButton:
+In the layout file (activity_nav_drawer.xml), assign the StateListAnimator to the ImageButton
+using the android:stateListAnimator attribute.-->
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the drawer is open -->
+    <item android:state_activated="true">
+        <objectAnimator
+            android:propertyName="rotation"
+            android:valueFrom="0"
+            android:valueTo="180"
+            android:duration="300" />
+    </item>
+    <!-- Default state (drawer closed) -->
+    <item>
+        <objectAnimator
+            android:propertyName="rotation"
+            android:valueFrom="180"
+            android:valueTo="0"
+            android:duration="300" />
+    </item>
+</selector>

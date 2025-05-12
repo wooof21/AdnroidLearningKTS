@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:background="@drawable/ecommerce_gradient_color2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.CategoryItems">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="16dp"
+            android:id="@+id/activity_category_products_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--CoordinatorLayout: wrapped the content in a CoordinatorLayout which
+    is often useful for managing overlapping views and behaviors,
+    but a FrameLayout or other layout could also work.-->
+
+    <!--FrameLayout container: to hold the included details layout.-->
+    <!--android:clickable="true" and android:focusable="true" are added to the container
+    to consume touch events when it's visible, preventing touches from going through
+    to the RecyclerView below.-->
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:id="@+id/main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:context=".dependencyinjection.mvvm.view.CategoryProductsActivity">-->
+
+<!--        &lt;!&ndash; Your existing RecyclerView for category products &ndash;&gt;-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/activity_category_products_recyclerview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior" /> &lt;!&ndash; Adjust layout_behavior if you have an AppBarLayout &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Include the product details layout &ndash;&gt;-->
+<!--        <FrameLayout-->
+<!--            android:id="@+id/product_details_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="26dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:visibility="gone">-->
+
+<!--            <include-->
+<!--                android:id="@+id/product_details_layout"-->
+<!--                layout="@layout/activity_product_details"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+
+<!--        </FrameLayout>-->
+
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+</layout>

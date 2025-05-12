@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playwrite"
+        android:text="Android Learning KTS"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/currency_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency Converter"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/lottery_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lottery App"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/widgets_add_btn"
+            app:layout_constraintTop_toTopOf="@+id/widgets_add_btn" />
+
+        <Button
+            android:id="@+id/widgets_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Widgets"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/currency_btn"
+            app:layout_constraintTop_toBottomOf="@+id/currency_btn" />
+
+        <Button
+            android:id="@+id/widgets_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Widgets Add"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/widgets_btn"
+            app:layout_constraintTop_toBottomOf="@+id/widgets_btn" />
+
+        <Button
+            android:id="@+id/adapters_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adapters"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/widgets_btn"
+            app:layout_constraintTop_toBottomOf="@+id/currency_btn" />
+
+        <Button
+            android:id="@+id/planets_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planets App"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/adapters_btn"
+            app:layout_constraintTop_toTopOf="@+id/adapters_btn" />
+
+        <Button
+            android:id="@+id/volume_calc_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume Calculator App"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/currency_btn"
+            app:layout_constraintTop_toTopOf="@+id/currency_btn" />
+
+        <Button
+            android:id="@+id/grocery_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grocery App"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/lottery_btn"
+            app:layout_constraintTop_toTopOf="@+id/widgets_add_btn" />
+
+        <Button
+            android:id="@+id/sports_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports App"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/widgets_add_btn"
+            app:layout_constraintTop_toBottomOf="@+id/widgets_add_btn" />
+
+        <Button
+            android:id="@+id/music_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music App"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/sports_btn"
+            app:layout_constraintTop_toBottomOf="@+id/widgets_add_btn" />
+
+        <Button
+            android:id="@+id/broadcast_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast Receiver"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/music_btn"
+            app:layout_constraintTop_toBottomOf="@+id/widgets_add_btn" />
+
+        <Button
+            android:id="@+id/fragments_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragments"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/sports_btn"
+            app:layout_constraintTop_toBottomOf="@+id/sports_btn" />
+
+        <Button
+            android:id="@+id/nav_drawer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigation Drawer"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/fragments_btn"
+            app:layout_constraintTop_toBottomOf="@+id/sports_btn" />
+
+        <Button
+            android:id="@+id/view_pager_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Pager"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/nav_drawer_btn"
+            app:layout_constraintTop_toBottomOf="@+id/sports_btn" />
+
+        <Button
+            android:id="@+id/data_binding_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Binding"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/fragments_btn"
+            app:layout_constraintTop_toBottomOf="@+id/fragments_btn" />
+
+        <Button
+            android:id="@+id/view_model_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JetPack ViewModel &amp; LiveData"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/data_binding_btn"
+            app:layout_constraintTop_toBottomOf="@+id/fragments_btn" />
+
+        <Button
+            android:id="@+id/navigation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JetPack Navigation"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/data_binding_btn"
+            app:layout_constraintTop_toBottomOf="@+id/data_binding_btn" />
+
+        <Button
+            android:id="@+id/coroutines_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coroutines"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/navigation_btn"
+            app:layout_constraintTop_toBottomOf="@+id/data_binding_btn" />
+
+        <Button
+            android:id="@+id/contact_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MVVM &amp; RoomDB - 1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/navigation_btn"
+            app:layout_constraintTop_toBottomOf="@+id/navigation_btn" />
+
+        <Button
+            android:id="@+id/note_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MVVM &amp; RoomDB - 2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/contact_btn"
+            app:layout_constraintTop_toBottomOf="@+id/navigation_btn" />
+
+        <Button
+            android:id="@+id/retrofit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retrofit"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/contact_btn"
+            app:layout_constraintTop_toBottomOf="@+id/contact_btn" />
+
+        <Button
+            android:id="@+id/realtimedb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firebase - RealtimeDB"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/retrofit_btn"
+            app:layout_constraintTop_toBottomOf="@+id/contact_btn" />
+
+        <Button
+            android:id="@+id/firestore_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firebase - Firestore"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/retrofit_btn" />
+
+    <Button
+        android:id="@+id/journal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journal - Firestore &amp; Storage &amp; Auth"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_btn" />
+
+
+    <Button
+        android:id="@+id/movie_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit - Movie App"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/firestore_btn"
+        app:layout_constraintTop_toTopOf="@+id/firestore_btn" />
+
+    <Button
+        android:id="@+id/hilt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hilt DI"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/realtimedb_btn"
+        app:layout_constraintTop_toTopOf="@+id/realtimedb_btn" />
+
+    <Button
+        android:id="@+id/hilt_firebase_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hilt with Firebase"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/journal_btn"
+        app:layout_constraintTop_toBottomOf="@+id/journal_btn" />
+
+    <Button
+        android:id="@+id/hilt_retorfit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hilt with Retrofit"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/hilt_firebase_btn"
+        app:layout_constraintTop_toBottomOf="@+id/journal_btn" />
+
+    <Button
+        android:id="@+id/hilt_room_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hilt with RoomDB"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/hilt_firebase_btn"
+        app:layout_constraintTop_toBottomOf="@+id/hilt_firebase_btn" />
+
+    <Button
+        android:id="@+id/hilt_mvvm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hilt with MVVM - Ecommerce"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/hilt_room_btn"
+        app:layout_constraintTop_toBottomOf="@+id/hilt_firebase_btn" />
+
+    <Button
+        android:id="@+id/rv_advanced_single_sel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RV - Single Item Selection"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/hilt_firebase_btn"
+        app:layout_constraintTop_toBottomOf="@+id/hilt_room_btn" />
+
+    <Button
+        android:id="@+id/rv_advanced_multi_sel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RV - Multi Item Selection"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/hilt_firebase_btn"
+        app:layout_constraintTop_toBottomOf="@+id/rv_advanced_single_sel_btn" />
+
+    <Button
+        android:id="@+id/rv_advanced_multi_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RV - Multi View Type"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/hilt_firebase_btn"
+        app:layout_constraintTop_toBottomOf="@+id/rv_advanced_multi_sel_btn" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

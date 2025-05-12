@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="contactViewModel"
+            type="com.adnroidlearningkts.mvvm.roomdb.contactmanager.viewmodel.ContactViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".mvvm.view.ContactActivity"
+        android:background="@drawable/mvvm_back1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:text="@={contactViewModel.inputName}"
+                android:id="@+id/contact_activity_name_et"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="28dp"
+                android:hint="Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:text="@={contactViewModel.inputEmail}"
+                android:id="@+id/contact_activity_email_et"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/contact_activity_name_et"
+                app:layout_constraintTop_toBottomOf="@+id/contact_activity_name_et" />
+
+            <Button
+                android:onClick="@{() -> contactViewModel.detectSaveOrUpdate()}"
+                android:text="@={contactViewModel.saveOrUpdateBtnText}"
+                android:id="@+id/contact_activity_save_or_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/contact_activity_name_et"
+                app:layout_constraintTop_toTopOf="@+id/contact_activity_name_et" />
+
+            <Button
+                android:onClick="@{() -> contactViewModel.detectClearAllOrDelete()}"
+                android:text="@={contactViewModel.clearAllOrDeleteBtnText}"
+                android:id="@+id/contact_activity_clear_or_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/contact_activity_save_or_update"
+                app:layout_constraintTop_toTopOf="@+id/contact_activity_email_et" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contact_activity_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

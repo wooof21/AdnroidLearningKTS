@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769815417891",
+    "project_id": "androidlearningkts-883a7",
+    "storage_bucket": "androidlearningkts-883a7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769815417891:android:1de175160c08cc815d4d96",
+        "android_client_info": {
+          "package_name": "com.adnroidlearningkts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYlyddOvXMIYDl-2ODrbBmI0PqpTLTHSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:name=".AndroidLearningApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdnroidLearningKTS"
+        tools:targetApi="31">
+        <activity
+            android:name=".dependencyinjection.mvvm.view.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.mvvm.view.CategoryProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.mvvm.view.EcommerceCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.advanced.multiviewtype.MultiViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.advanced.multiitemselection.MultiSelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.advanced.singleitemselection.SingleSelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.mvvm.view.EcommerceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.room.view.HiltContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.retrofit.view.PostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.firebase.HiltFirebaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dependencyinjection.HiltDIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".retrofit.movieapp.view.MovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.authentication.view.JournalAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.authentication.view.JournalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.authentication.view.JournalSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.authentication.view.JournalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.firestore.FirestoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.realtimedb.RealtimeDBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".retrofit.RetrofitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.roomdb.notetaking.view.NoteTakingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".coroutines.SequentialAndParallelCoroutinesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".coroutines.CoroutineAntoherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".coroutines.CoroutinesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.roomdb.contactmanager.view.ContactManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".navigation.NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewmodelandlivedata.ViewModelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".databinding.quadraticequation.QuadraticEquationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".databinding.DataBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.viewpager.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.navigationdrawer.NavDrawerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".broadcastreceiver.AirplaneModeActivity"
+            android:exported="false" />
+
+        <service android:name=".androidservices.MusicService" />
+
+        <activity
+            android:name=".androidservices.MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.advanced.cardview.SportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.GroceryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapters.gridview.VolumeCalcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapters.gridview.VolumeGridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapters.listview.PlanetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapters.AdaptersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.WidgetsActivityAdd"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.WidgetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lottery.NumberResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lottery.LotteryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".currencyconverter.CurrencyConverterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

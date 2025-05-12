@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_taking_nav_graph"
+    app:startDestination="@id/noteHomeFragment">
+
+    <fragment
+        android:id="@+id/noteHomeFragment"
+        android:name="com.adnroidlearningkts.mvvm.roomdb.notetaking.view.NoteHomeFragment"
+        android:label="fragment_note_home"
+        tools:layout="@layout/fragment_note_home" >
+        <action
+            android:id="@+id/action_noteHomeFragment_to_noteNewFragment"
+            app:destination="@id/noteNewFragment" />
+        <action
+            android:id="@+id/action_noteHomeFragment_to_noteUpdateFragment"
+            app:destination="@id/noteUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteNewFragment"
+        android:name="com.adnroidlearningkts.mvvm.roomdb.notetaking.view.NoteNewFragment"
+        android:label="fragment_note_new"
+        tools:layout="@layout/fragment_note_new" >
+        <action
+            android:id="@+id/action_noteNewFragment_to_noteHomeFragment"
+            app:destination="@id/noteHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteUpdateFragment"
+        android:name="com.adnroidlearningkts.mvvm.roomdb.notetaking.view.NoteUpdateFragment"
+        android:label="fragment_note_update"
+        tools:layout="@layout/fragment_note_update" >
+        <action
+            android:id="@+id/action_noteUpdateFragment_to_noteHomeFragment"
+            app:destination="@id/noteHomeFragment" />
+
+        <!-- Navigation: allows to attach data to a navigation operation by defining
+                arguments for the destination.
+                * UpdateFragment to HomeFragment
+                -->
+        <argument
+            android:name="note"
+            app:argType="com.adnroidlearningkts.mvvm.roomdb.notetaking.model.Note"
+            app:nullable="true"/>
+    </fragment>
+</navigation>

@@ -36,6 +36,7 @@ import com.adnroidlearningkts.lottery.LotteryActivity
 import com.adnroidlearningkts.mvvm.roomdb.contactmanager.view.ContactManagerActivity
 import com.adnroidlearningkts.mvvm.roomdb.notetaking.view.NoteTakingActivity
 import com.adnroidlearningkts.navigation.NavigationActivity
+import com.adnroidlearningkts.paging.view.PagingActivity
 import com.adnroidlearningkts.recyclerview.GroceryActivity
 import com.adnroidlearningkts.recyclerview.advanced.cardview.SportsActivity
 import com.adnroidlearningkts.recyclerview.advanced.multiitemselection.MultiSelActivity
@@ -99,6 +100,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private lateinit var multiSelBtn: Button
     private lateinit var multiViewBtn: Button
     private lateinit var hiltMVVMBtn: Button
+    private lateinit var pagingBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -263,6 +265,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         multiViewBtn = findViewById(R.id.rv_advanced_multi_view_btn)
         multiViewBtn.setOnClickListener(this)
 
+        pagingBtn = findViewById(R.id.paging_btn)
+        pagingBtn.setOnClickListener(this)
     }
 
     /**
@@ -336,6 +340,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             R.id.rv_advanced_single_sel_btn -> Intent(this, SingleSelActivity::class.java)
             R.id.rv_advanced_multi_sel_btn -> Intent(this, MultiSelActivity::class.java)
             R.id.rv_advanced_multi_view_btn -> Intent(this, MultiViewActivity::class.java)
+            R.id.paging_btn -> Intent(this, PagingActivity::class.java)
             else -> null
         }
 

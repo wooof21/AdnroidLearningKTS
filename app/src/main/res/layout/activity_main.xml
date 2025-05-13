@@ -290,6 +290,15 @@
         app:layout_constraintTop_toBottomOf="@+id/hilt_firebase_btn" />
 
     <Button
+        android:id="@+id/paging_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JetPack Paging"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/rv_advanced_single_sel_btn"
+        app:layout_constraintTop_toTopOf="@+id/rv_advanced_single_sel_btn" />
+
+    <Button
         android:id="@+id/hilt_mvvm_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

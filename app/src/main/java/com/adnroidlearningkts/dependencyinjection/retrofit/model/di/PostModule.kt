@@ -3,6 +3,7 @@ package com.adnroidlearningkts.dependencyinjection.retrofit.model.di
 import com.adnroidlearningkts.BuildConfig
 import com.adnroidlearningkts.dependencyinjection.firebase.repository.DataRepo
 import com.adnroidlearningkts.dependencyinjection.retrofit.model.config.PostsInterface
+import com.adnroidlearningkts.dependencyinjection.retrofit.model.di.Qualifiers.PostsRetrofit
 import com.adnroidlearningkts.dependencyinjection.retrofit.model.repository.PostRepo
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.gson.Gson
@@ -26,6 +27,7 @@ object PostModule {
 
     private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
+    @PostsRetrofit
     @Provides
     @Singleton
     fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor {
@@ -35,9 +37,10 @@ object PostModule {
         }
     }
 
+    @PostsRetrofit
     @Provides
     @Singleton
-    fun provideOkHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
+    fun provideOkHttpClient(@PostsRetrofit loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
             .connectTimeout(30, TimeUnit.SECONDS) // Example: Set connection timeout
@@ -45,6 +48,7 @@ object PostModule {
             .build()
     }
 
+    @PostsRetrofit
     @Provides
     @Singleton
     fun provideGson(): Gson {
@@ -54,9 +58,10 @@ object PostModule {
             .create()
     }
 
+    @PostsRetrofit
     @Provides
     @Singleton
-    fun provideGsonConverterFactory(gson: Gson): GsonConverterFactory {
+    fun provideGsonConverterFactory(@PostsRetrofit gson: Gson): GsonConverterFactory {
         return GsonConverterFactory.create(gson)
     }
 
@@ -105,9 +110,10 @@ object PostModule {
      *      fun providePostsApi(@PostsRetrofit retrofit: Retrofit)
      */
 
+    @PostsRetrofit
     @Provides
     @Singleton
-    fun provideRetrofit(client: OkHttpClient, gsonFactory: GsonConverterFactory): Retrofit {
+    fun provideRetrofit(@PostsRetrofit client: OkHttpClient, @PostsRetrofit gsonFactory: GsonConverterFactory): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(client)
@@ -117,7 +123,7 @@ object PostModule {
 
     @Provides
     @Singleton
-    fun provideApi(retrofit: Retrofit): PostsInterface {
+    fun provideApi(@PostsRetrofit retrofit: Retrofit): PostsInterface {
         return retrofit.create(PostsInterface::class.java)
     }
 }

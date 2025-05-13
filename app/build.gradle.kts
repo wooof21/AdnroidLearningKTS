@@ -178,5 +178,13 @@ dependencies {
     ksp("com.google.dagger:hilt-android-compiler:2.56.1")
     /*------------------------------------------------------------------*/
 
+    /*-----------------------Android JetPack Paging-----------------*/
+    val paging_version = "3.3.6"
+    implementation("androidx.paging:paging-runtime:$paging_version")
+    // alternatively - without Android dependencies for tests
+    testImplementation("androidx.paging:paging-common:$paging_version")
+    // optional - RxJava3 support
+    implementation("androidx.paging:paging-rxjava3:$paging_version")
+    /*------------------------------------------------------------------*/
 
 }

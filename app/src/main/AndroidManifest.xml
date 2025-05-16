@@ -20,6 +20,96 @@
         android:theme="@style/Theme.AdnroidLearningKTS"
         tools:targetApi="31">
         <activity
+            android:name=".jetpackcompose.widgets.CountdownTimerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_countdown_timer"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.listlazylayout.LazyGridVerticalActivity"
+            android:exported="false"
+            android:label="@string/title_activity_vertical_lazy_grid"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.listlazylayout.LazyGridHorizontalActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lazy_grid"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.listlazylayout.LazyRowActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lazy_row"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.listlazylayout.LazyColumnActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.navigation.NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.TopbarActivity"
+            android:exported="false"
+            android:label="@string/title_activity_topbar"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.DialogActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dialog"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.SnackbarMsgActivity"
+            android:exported="false"
+            android:label="@string/title_activity_snackbar_msg"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.ToastActivity"
+            android:exported="false"
+            android:label="@string/title_activity_toast"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.DropdownMenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dropdown_menu"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.SwitchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_switch"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.RadioBtnActivity"
+            android:exported="false"
+            android:label="@string/title_activity_radio_btn"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.CheckBoxActivity"
+            android:exported="false"
+            android:label="@string/title_activity_check_box"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.ImageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.TextFieldActivity"
+            android:exported="false"
+            android:label="@string/title_activity_text_field"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.widgets.LayoutActivity"
+            android:exported="false"
+            android:label="@string/title_activity_layout"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
+            android:name=".jetpackcompose.ComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
             android:name=".paging.view.PagingActivity"
             android:exported="false" />
         <activity

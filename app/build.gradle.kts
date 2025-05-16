@@ -18,6 +18,7 @@ plugins {
     id("com.google.gms.google-services")
 
     id("com.google.dagger.hilt.android")
+    alias(libs.plugins.kotlin.compose)
 
 }
 
@@ -60,6 +61,7 @@ android {
     buildFeatures {
         dataBinding = true
         buildConfig = true
+        compose = true
     }
 }
 
@@ -74,6 +76,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -83,7 +90,9 @@ dependencies {
 
     //glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
-
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 
 
     /*---------------------JetPack ViewModel----------------------*/
@@ -185,6 +194,24 @@ dependencies {
     testImplementation("androidx.paging:paging-common:$paging_version")
     // optional - RxJava3 support
     implementation("androidx.paging:paging-rxjava3:$paging_version")
+    /*------------------------------------------------------------------*/
+
+    /*-----------------------Android JetPack Compose-----------------*/
+    val composeBom = platform("androidx.compose:compose-bom:2025.05.00")
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+    // Choose one of the following:
+    // Material Design 3
+    implementation("androidx.compose.material3:material3")
+    // Android Studio Preview support
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    // UI Tests
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    //SystemUiController from the Accompanist System UI Controller library
+    //https://google.github.io/accompanist/systemuicontroller/
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.36.0")
     /*------------------------------------------------------------------*/
 
 }

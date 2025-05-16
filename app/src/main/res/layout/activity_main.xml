@@ -335,6 +335,14 @@
         app:layout_constraintTop_toBottomOf="@+id/rv_advanced_multi_sel_btn" />
 
 
+    <Button
+        android:id="@+id/compose_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JetPack Compose UI"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/rv_advanced_single_sel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/paging_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

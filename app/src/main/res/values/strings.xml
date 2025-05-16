@@ -5,4 +5,24 @@
     <string name="drawer_menu_open">Open</string>
     <string name="drawer_menu_close">Close</string>
     <string name="movie_api_key">76df037c3dc6f00226909bdc3fb75127</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+    <string name="title_activity_another">AnotherActivity</string>
+    <string name="title_activity_layout">LayoutActivity</string>
+    <string name="title_activity_text_field">TextFieldActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_check_box">CheckBoxActivity</string>
+    <string name="title_activity_radio_btn">RadioBtnActivity</string>
+    <string name="title_activity_switch">SwitchActivity</string>
+    <string name="title_activity_dropdown_menu">DropdownMenuActivity</string>
+    <string name="title_activity_toast">ToastActivity</string>
+    <string name="title_activity_snackbar_msg">SnackbarMsgActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_topbar">TopbarActivity</string>
+    <string name="title_activity_options_menu">OptionsMenuActivity</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_lazy_row">LazyRowActivity</string>
+    <string name="title_activity_lazy_grid">LazyGridActivity</string>
+    <string name="title_activity_vertical_lazy_grid">VerticalLazyGridActivity</string>
+    <string name="title_activity_countdown_timer">CountdownTimerActivity</string>
 </resources>

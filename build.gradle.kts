@@ -20,6 +20,7 @@ plugins {
     id("com.google.gms.google-services") version "4.4.2" apply false
     id("com.google.dagger.hilt.android") version "2.56.1" apply false
 
+
     // * Enables Kotlin Compilation for JVM: The core function of this plugin is to enable the compilation
 // * of Kotlin source code for the JVM. When apply this plugin, Gradle becomes aware of
 // * Kotlin sources (.kt files) and sets up the necessary tasks to compile them into JVM bytecode (.class files)
@@ -50,6 +51,8 @@ plugins {
 // * In summary, kotlin("jvm") is the essential Gradle plugin for compiling and
 // * building Kotlin code that targets the Java Virtual Machine.
     kotlin("jvm") version "2.1.0" apply false
+    alias(libs.plugins.kotlin.compose) apply false
+
 }
 
 tasks.register("clean", Delete::class) {

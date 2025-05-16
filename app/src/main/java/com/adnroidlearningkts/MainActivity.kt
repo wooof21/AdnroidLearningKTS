@@ -32,6 +32,7 @@ import com.adnroidlearningkts.firebase.realtimedb.RealtimeDBActivity
 import com.adnroidlearningkts.fragments.FragmentsActivity
 import com.adnroidlearningkts.fragments.navigationdrawer.NavDrawerActivity
 import com.adnroidlearningkts.fragments.viewpager.ViewPagerActivity
+import com.adnroidlearningkts.jetpackcompose.ComposeActivity
 import com.adnroidlearningkts.lottery.LotteryActivity
 import com.adnroidlearningkts.mvvm.roomdb.contactmanager.view.ContactManagerActivity
 import com.adnroidlearningkts.mvvm.roomdb.notetaking.view.NoteTakingActivity
@@ -101,6 +102,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private lateinit var multiViewBtn: Button
     private lateinit var hiltMVVMBtn: Button
     private lateinit var pagingBtn: Button
+    private lateinit var composeBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -267,6 +269,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
         pagingBtn = findViewById(R.id.paging_btn)
         pagingBtn.setOnClickListener(this)
+
+        composeBtn = findViewById(R.id.compose_btn)
+        composeBtn.setOnClickListener(this)
     }
 
     /**
@@ -341,6 +346,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             R.id.rv_advanced_multi_sel_btn -> Intent(this, MultiSelActivity::class.java)
             R.id.rv_advanced_multi_view_btn -> Intent(this, MultiViewActivity::class.java)
             R.id.paging_btn -> Intent(this, PagingActivity::class.java)
+            R.id.compose_btn -> Intent(this, ComposeActivity::class.java)
             else -> null
         }
 

@@ -20,6 +20,11 @@
         android:theme="@style/Theme.AdnroidLearningKTS"
         tools:targetApi="31">
         <activity
+            android:name=".jetpackcompose.apps.todolist.TodoListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_todo_list"
+            android:theme="@style/Theme.AdnroidLearningKTS" />
+        <activity
             android:name=".jetpackcompose.widgets.CountdownTimerActivity"
             android:exported="false"
             android:label="@string/title_activity_countdown_timer"
@@ -247,9 +252,13 @@
         <activity
             android:name=".currencyconverter.CurrencyConverterActivity"
             android:exported="false" />
+
+        <!-- 2. set the MainActivity theme to the Splash theme-->
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.MySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

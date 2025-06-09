@@ -94,6 +94,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    /*---------------------Preference DataStore----------------------*/
+    //DataStore is a new and improved data storage solution aimed at replacing SharedPreferences.
+    //https://developer.android.com/codelabs/android-preferences-datastore#0
+    implementation("androidx.datastore:datastore-preferences:1.1.6")
+    /*---------------------------------------------------------------*/
+
 
     /*---------------------JetPack ViewModel----------------------*/
     val lifecycle_version = "2.8.7"
@@ -214,4 +220,6 @@ dependencies {
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.36.0")
     /*------------------------------------------------------------------*/
 
+    // Splash API - https://developer.android.com/develop/ui/views/launch/splash-screen
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }
